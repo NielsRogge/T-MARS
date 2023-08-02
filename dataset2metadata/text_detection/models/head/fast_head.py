@@ -8,10 +8,7 @@ import torch.nn.functional as F
 import numpy as np
 import json
 import cv2
-try:
-    from models.post_processing.ccl import ccl_cuda
-except:
-    print("ccl_cuda is not installed!")
+from models.post_processing.ccl import ccl_cuda
 
 
 class FASTHead(nn.Module):
